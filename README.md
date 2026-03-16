@@ -1,7 +1,6 @@
 # STM32F103C8T6 (Blue Pill) - Blink ve Debug Projesi
 
 Bu proje, STM32F103C8T6 (Blue Pill) mikrodenetleyicisi kullanılarak gerçekleştirilmiş temel bir LED yakıp söndürme (Blink) ve hata ayıklama (Debug) uygulamasıdır. 
-▶️ **Proje Uygulama Videosu:** [Buraya Tıklayarak İzleyebilirsiniz (YouTube)](https://www.youtube.com/watch?v=AqFCqYYYG8Q)
 
 ## 📌 Proje Özellikleri
 * **Mikrodenetleyici:** STM32F103C8T6 (ARM Cortex-M3)
@@ -21,7 +20,12 @@ Bu proje, STM32F103C8T6 (Blue Pill) mikrodenetleyicisi kullanılarak gerçekleş
 ## 🚀 Derleme (Build) ve Yükleme (Flash)
 Proje dizininde terminal açılarak aşağıdaki komut ile derleme işlemi (Build) gerçekleştirilebilir:
 ```bash
+openocd -f interface/stlink.cfg -c "set CPUTAPID 0x2ba01477" -f target/stm32f1x.cfg -c "program build/Blink45.elf verify reset exit"
+```
+```bash
 mingw32-make
+```
+▶️ **Proje Uygulama Videosu:** [Buraya Tıklayarak İzleyebilirsiniz (YouTube)](https://www.youtube.com/watch?v=AqFCqYYYG8Q)
 
 
 
