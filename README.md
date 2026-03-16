@@ -19,3 +19,6 @@ Bu proje, STM32F103C8T6 (Blue Pill) mikrodenetleyicisi kullanılarak gerçekleş
 Proje dizininde terminal açılarak aşağıdaki komut ile derleme işlemi (Build) gerçekleştirilebilir:
 ```bash
 mingw32-make
+
+Youtube linki için:
+https://www.youtube.com/watch?v=AqFCqYYYG8Q
